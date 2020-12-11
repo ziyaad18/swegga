@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-za" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>ORDER</title>
+
+</head>
+
+<style>
+
+/* Examination number */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	background-color: powderblue;
+    margin: 0;
+	padding: 0; }
+
+#page {
+	width: 1500px;
+	background-color: powderblue;;
+	margin: 10px auto;
+	border: 2px metalic black;
+    padding: 10px; };
+    
+
+#banner {
+    margin-bottom: 1em;
+	height: 70px }
+
+#navigation {
+	margin-top: 1em;
+	height: 45px;
+	background-color: powderblue; }
+	
+#sidebar {
+	width: 150px;
+	height: 370px;
+	background-color:powderblue;
+	margin-bottom: .7em;
+	float: left; }
+
+.copyright {
+    font-size: 90%;
+    text-align: right; 
+	margin: 0; }
+	
+/* the styles for the table*/
+
+caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 150%;
+	color: #4766B8; }
+
+td, th {
+	border: 1px solid black;
+	padding: .2em .7em;
+	font-size: 95%; }	
+	
+.alignRight {
+	text-align: right; }
+
+
+
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+.tab {
+    margin:8 px;
+    text-align:center ;
+    display: contents;
+}
+
+h2 {text-align: center;
+    size: 23px;
+
+}
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feet{
+    align-self: left;
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+<div id="page">
+
+
+
+
+
+
+
+
+<img src="links.gif" alt="Workplace" usemap="#workmap" class='center'>
+
+<map name="workmap">
+  <area shape="rect" coords="10,5,95,35" alt="Home" href="order.html">
+  <area shape="rect" coords="105,5,190,35" alt="Phone" href="services.html">
+  <area shape="circle" coords="205,5,300,35" alt="service" href="products.html">
+  <area shape="circle" coords="310,5,440,35" alt="order" href="orderStatus.html">
+  <area shape="rect" coords="450,5,555,35" alt="contact" href="contactUs.html">
+</map> 
+	<div id="main">
+       
+<img src="swegga.jpg" >
+    </div>
+    <div class="head">
+        <h2>Product summary</h2>
+    <div class="tab">
+    <table class="center"></br>
+
+    </br><th>Description</th><th>Size</th><th>Colour</br>Price </th><th>Quantity</th><th>Price</th><th>Total</th>
+        <tr><td>Female Ski Jackets</td><td>
+            <select name="cars" id="cars">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              
+            </select></td><td><select name="cars" id="cars">
+              <option value="small">white</option>
+              <option value="medium">blue</option>
+              <option value="large">Red</option>
+              </td><td><input type="text" id="number1" name="number" value=><br><br></td><td>150.95</td><td id="total_female"> 0</td>
+        <tr><td>Male ski Jackets</td><td>
+            <form action="/action_page.php">
+              
+              <select name="cars" id="cars">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                
+              </select>
+              <br><br>
+            
+            </form></td><td> <select name="cars" id="cars">
+                <option value="small">blue</option>
+                <option value="medium">white</option>
+                <option value="large">Red</option></td><td><input type="text" id="number2" name="number" value=><br><br></td><td>180.95</td><td id="total_male">21</td>
+        <tr><td colspan="4">Click to confirm and process your order</td> <td><button type="button" onclick=calc()>Total Price</button> </td><td id="ans">[TOTAL]</td>
+        
+        
+    
+    </table>
+    
+</div>
+    <hr style="width:100%;text-align:left;margin-right:0;"> 
+    <footer class= "copyright">
+        <p>Author: Ziyaad Petersen<br>
+        <a href="Ziyaad Petersen">Pz@gmail.com</a></p>
+      </footer>
+    </div>
+    <script>
+
+  function calc(){
+      let female_price=(document.getElementById("number1")).value*150.95;
+      document.getElementById("total_female").innerHTML=female_price;
+      let male_price=(document.getElementById("number2")).value*180.95;
+      document.getElementById("total_male").innerHTML=male_price;
+      let ans=((document.getElementById("number1")).value*150.95)+((document.getElementById("number2")).value*180.95);
+      document.getElementById("ans").innerHTML=ans}
+</script>
+
+
+</body>
+</html>
